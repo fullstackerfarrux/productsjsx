@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: grey;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  width: 100vw;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+#products {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .minus {
+    width: 40px;
+    height: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .son {
+    font-size: 30px;
+    margin: 0 20px;
+  }
+  .plus {
+    width: 40px;
+    height: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .grid {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    #product {
+      width: 300px;
+      background-color: white;
+      img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        width: 300px;
+        margin-bottom: 15px;
+      }
+      h4 {
+        font-size: 20px;
+        color: lightsalmon;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-size: 20px;
+        color: red;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 20px;
+        color: yellowgreen;
+        margin-bottom: 10px;
+      }
+      .details {
+        width: 300px;
+        padding: 2px 122px 2px 122px;
+        background-color: green;
+        border: none;
+        height: 30px;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}
+
+#details {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
